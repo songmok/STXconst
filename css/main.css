@@ -564,13 +564,19 @@ body {
 .about-list {
   position: relative;
   display: inline-block;
-  background: red;
 }
 .about-list > li {
   position: relative;
   display: block;
   float: left;
   height: 100px;
+}
+.about-list > li > a {
+  position: relative;
+  display: block;
+  font-size: 22px;
+  color: #111;
+  font-weight: 500;
 }
 .about-list > li > a::before {
   content: "";
@@ -579,6 +585,7 @@ body {
   background: url(../images/bg_icon.png) no-repeat;
   width: 110px;
   height: 108px;
+  margin-bottom: 25px;
 }
 .about-list > li:nth-child(1) > a::before {
   background-position: 0 0;
